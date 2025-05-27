@@ -1,0 +1,14 @@
+gitGraph
+    commit id: " "
+    branch fork-main
+    checkout fork-main
+    commit id: "git checkout -b task-branch"
+    branch task-branch
+    checkout task-branch
+    commit id: "git commit -m ''new endpoint''"
+    commit id: "git commit -m ''fix bug''"
+    commit id: "git push origin task-branch"
+    checkout main
+    merge task-branch id: "Pull Request"
+    checkout fork-main
+    merge main id: "git pull remote-origin main"
